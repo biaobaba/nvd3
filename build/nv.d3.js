@@ -701,6 +701,7 @@ nv.models.tooltip = function() {
                     .delay(hideDelay)
                     .duration(0)
                     .style('opacity', 0);
+                    tooltip[0][0].style.opacity=0;
             } else {
                 // using tooltip.style('transform') returns values un-usable for tween
                 var old_translate = 'translate(' + lastPosition.left + 'px, ' + lastPosition.top + 'px)';
